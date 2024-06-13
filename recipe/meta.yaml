@@ -1,5 +1,5 @@
 {% set name = "eurostat" %}
-{% set version = "1.0.4" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/eurostat-{{ version }}.tar.gz
-  sha256: 75cbe6aaff8a8a341896e9621d20789b8f705974e875cf65539723bc46a36a5c
+  sha256: 6b70c5278084f603d6e92f481c1893f8ccc96f80d09347a822873a7ee679d54d
 
 build:
   noarch: python
@@ -32,7 +32,7 @@ test:
     - pip
 
 about:
-  home:  https://pypi.org/project/eurostat/
+  home: https://pypi.org/project/eurostat/
   summary: Eurostat Python Package
   dev_url: https://bitbucket.org/noemicazzaniga/eurostat/src/master/
   license: MIT
